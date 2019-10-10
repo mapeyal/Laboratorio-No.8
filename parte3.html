@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es"><!--Declaramos el lenguaje en que se mostrará el texto-->
+
+<head>
+    <!--Indicamos que código de caracteres acepta nuestra página-->
+    <meta charset="UTF-8">
+    <!--Nos permite controlar el tamaño de la página-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Llamamos a nuestra hoja de estilos de CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Llamamos a la hoja de estilo proporcionada por bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Colocamos el título de nuestra página-->
+    <title>Lab 8 - #3</title>
+</head>
+
+<body>
+        <!--Creamos el form principal donde se agruparán nuestros elementos-->
+    <form>
+        <!--Creamos un div llamado form-group pues este es la manera más
+        fácil de agrupar labels, textbox, controls, y, propociona de
+        manera automática margenes y ordenamiento a los elementos dentro de él -->
+        <div class="form-group">
+            <label for="exampleInputEmail1">Correo electrónico:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="ejemplo@ejemplo.com">
+            <small id="emailHelp" class="form-text text-muted"><p>No compartiremos tu información con nadie</p> </small>
+        </div>
+        <!--Creamos un div y dentro de él creamos un campo especial para
+        que el usuario escriba su contraseña y que esta no sea visible-->
+        <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña:</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+        </div>
+        <!--Creamos un div, el cual nos permite generar un chechbox para recordar los datos
+        del usuario en esta página-->
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+        </div>
+         <!--Creamos un botón, los cuales Bootstrap les proporciona un diseño único
+        para la función que nosotros querramos darle -->
+        <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+    </form>
+</body>
+
+</html>

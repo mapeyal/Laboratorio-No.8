@@ -1,0 +1,30 @@
+form{
+  /* Le aplicamos a nuestra página una anchura del 100% que proporcione el navegador */  
+  width:100%;
+  /* Le damos una altura de 100vh y se adapte a la altura que proporcione el navegador*/
+  height:100vh;
+  /* Justificamos y alineamos nuestros elementos al centro de la página*/
+  justify-content:center;
+  align-items:center;
+  display: block;
+  /*Le aplicamos un padding de 10em, donde cada em equivale a 16px*/
+  padding: 8em;
+  /*Insertamos nuestra imagen de fondo, que se ubique desde el centro de esta y se distribuya
+  en la página, que no se repita y que cubra por completo la página*/
+  background: url("../img/fondo.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*Damos color a nuestro texto, tamaño y grosor de este*/
+  color: yellow;
+  font-size: 15px;
+  font-weight: bold;  
+}
+/*Le damos estilo al texto de a la etiqueta
+para que sea igual al resto de la página*/
+p{
+  color: yellow;
+  font-size: 10px;
+  font-weight: bold;  
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Declaramos el lenguaje en que se mostrará el texto-->
+
+<head>
+    <!--Indicamos que código de caracteres acepta nuestra página-->
+    <meta charset="UTF-8">
+    <!--Nos permite controlar el tamaño de la página-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Llamamos a nuestra hoja de estilos de CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Llamamos a la hoja de estilo proporcionada por bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Colocamos el título de nuestra página-->
+    <title>Lab 8 - #1</title>
+</head>
+
+<body>
+    <!--Creamos el form principal donde se agruparán nuestros elementos-->
+    <form>
+        <!--Creamos un div llamado form-group pues este es la manera más
+        fácil de agrupar labels, textbox, controls, y, propociona de
+        manera automática margenes y ordenamiento a los elementos dentro de él -->
+        <div class="form-group">
+            <label for="texto_nombre">Ingrese su nombre:</label>
+            <input type="text" class="form-control" id="texto_nombre" placeholder="Juanito Pérez">
+            <label for="texto_grande">Escriba su mensaje:</label>
+            <textarea class="form-control" id="texto_grande" rows="3"></textarea>
+            <!--Se crea un div para el selector de opciones, el cual Bootstrap
+            nos brinda un estilo fijo y al cual podemos añadirle las opciones que
+            deseemos -->
+            <div class="form-group">
+                <label for="selector">Seleccione una opción:</label>
+                <select class="form-control" id="selector">
+                    <option selected>...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <!--Creamos un div para el selector de archivo, el cual ya tiene un estilo
+            predeterminado y también tiene el código de javascript para abrir el
+            explorador de archivos -->
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+                <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+            </div>
+        </div>
+        <!--Creamos un botón, los cuales Bootstrap les proporciona un diseño único
+        para la función que nosotros querramos darle -->
+        <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+    </form>
+</body>
+
+
+</html>
